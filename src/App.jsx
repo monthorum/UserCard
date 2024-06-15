@@ -31,8 +31,8 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef();
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3();
   const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 2, linearDamping: 2 };
-  const { nodes, materials } = useGLTF('https://res.cloudinary.com/danwmkqdz/image/upload/v1715928511/test3_ygv9qa.glb');
-  const texture = useTexture('https://res.cloudinary.com/danwmkqdz/image/upload/v1715920446/xy3_cxcivy.jpg');
+  const { nodes, materials } = useGLTF('https://res.cloudinary.com/dcrdsjf3z/image/upload/v1718444887/mmendoza_zfn307.glb');
+  const texture = useTexture('https://res.cloudinary.com/dcrdsjf3z/image/upload/v1718446944/med-digital_cad_4_onvtlb.jpg');
   const { width, height } = useThree((state) => state.size);
   const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]));
   const [dragged, drag] = useState(false);
